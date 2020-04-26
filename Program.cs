@@ -96,11 +96,11 @@ namespace MockAssessment1a
             Console.WriteLine();
             Console.WriteLine("Would you like to continue? (y/n) ");
             string proceed = Console.ReadLine().ToLower();
-            if (proceed.ToLower().StartsWith("y"))
+            if (proceed.StartsWith("y"))
             {
                 return true;
             }
-            if (proceed.ToLower().StartsWith("n"))
+            if (proceed.StartsWith("n"))
             {
                 Console.WriteLine("thank you!");
                 Console.WriteLine();
