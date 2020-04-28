@@ -68,8 +68,20 @@ namespace MockAssessment1a
 
         public static double Subtract(double num1, double num2)
         {
-            num2 = num2 - num1;
-            return num2;
+            if (num1 >= num2)
+            {
+                num2 = num1 - num2;
+                return num2;
+            }
+            if (num2 >= num1)
+            {
+                num2 = num2 - num1;
+                return num2;
+            }
+            else
+            {
+                return -1;
+            }
         }
 
         public static string FindBuildingType(double num2)
